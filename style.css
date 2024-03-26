@@ -1,0 +1,191 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+.header-logo{
+    width: 80px;
+    margin: 6px 5px;
+}
+.nav-items ul{
+    display: flex;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.nav-items li{
+    margin: 10px;
+    /* width: fit-content; */
+    padding: 2px;
+    font-size: 20px;
+}
+.nav-items li:hover{
+    cursor: pointer;
+    background-color: rgb(218, 216, 216);
+    border-radius: 5px;
+}
+
+.filter-btn{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.filter-btn:hover{
+    cursor: pointer;
+}
+
+
+.cuisine{
+    color: rgba(67, 6, 179, 0.76);
+    line-height: 19px;
+}
+.res-card1{
+    
+    width: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color:rgb(232, 246, 221);
+    margin: 10px 8px;
+    border-radius: 10px;
+    height: 400px;
+    
+}
+
+.resCard-img{
+    width: 95%;
+    height: 190px;
+    border: 5px solid black;
+    background-position: 0 0;
+}
+.card-text{
+    font-size: 14px;
+    /* overflow: hidden; */
+    line-height: 5px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.card-title{
+    line-height: 15px;
+}
+.res-card1:hover{
+    cursor: pointer;
+    border-radius: 20PX;
+    border: 2px solid rgb(170, 255, 109);
+
+}
+.search{
+    margin: 10px;
+}
+
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shimmer-card{
+    height: 400px;
+    width: 200px;
+    margin: 50px 15px;
+    background-color: rgb(209, 208, 208);
+
+}
+.filter{
+    display: flex;
+}
+.search{
+    margin-top: 15px;
+}
+.res-menu-head{
+    display: flex;
+}
+.res-name{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 80px;
+    margin-top: 75px;
+    text-decoration:underline;
+}
+.res-img{
+    margin-top: 55px;
+    height:150px;
+    border-radius: 30px;
+    border: 5px double rgb(240, 149, 37);
+    margin-left: 100px;
+}
+
+.menu-rating{
+    display: flex;
+    margin-left: 140px;
+    border: 2px solid black;
+    padding: 0px 10px;
+    margin-right: 100px;
+    border-radius: 10px;
+
+    
+}
+
+.star-rating-menu{
+    margin-top: 21px;
+}
+.cuisines-menu{
+    margin-left: 80px;
+}
+.menu{
+    margin-top: 45px;
+    margin-left: 50px;
+}
+.menu-heading{
+    font-family: "Madimi One", sans-serif;
+    border: 2px solid black;
+    display: inline;
+    padding: 4px 7px;
+    border-radius: 15px;
+}
+.menu-items{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17;
+    font-weight: 600;
+}
+.location-menu{
+    margin-left: 80px;
+    font-size:18;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0 15px;
+    display: inline;
+    padding-top: 3px;
+}
+.cuisines-menu{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cuisine-menu-heading{
+    text-decoration: underline;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+    font-size: 20;
+}
+.user-card{
+    border: 2px solid rgb(93, 89, 89);
+    margin-bottom: 15px;
+    width: 420px;
+    padding: 0px 15px;
+    
+}
+.user-classbased{
+    border: 2px solid rgb(93, 89, 89);
+    width: 200px;
+    padding: 0px 15px;
+    border-radius: 30px;
+}
+.abt-img{
+    max-width: 100%; 
+    max-height: 100%;
+    border: 2px double rgb(161, 231, 82);
+    border-radius: 30px;
+}
