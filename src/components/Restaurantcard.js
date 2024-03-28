@@ -1,17 +1,18 @@
 
 import { CDN_IMAGE_URL } from "../utils/constants"
+import { AiFillStar } from "react-icons/ai"
 const RestaurantCard = (props)=>{
     const{resData} = props
     const{cloudinaryImageId, name, cuisines, avgRating} = resData?.info
     const{deliveryTime} = resData?.info?.sla
     return (
-        <div className="res-card1">
-            <img className= "resCard-img" src={CDN_IMAGE_URL+ cloudinaryImageId}  alt="food photo"/>
-            <div className="card-text">
-            <h3 className="card-title"> {name}</h3>
-            <h4 className="cuisine">{cuisines.join(", ")}</h4>
-            <h4>Avg. Rating : {avgRating} </h4>
-            <h4>{deliveryTime} mins away</h4>
+        <div className="res-card1 m-2 p-4 h-[330px] w-[225px] text-pretty bg-slate-200 rounded-lg hover:bg-gray-300">
+            <img className= "resCard-img w-[200px] h-[150px] rounded-lg mb-1" src={CDN_IMAGE_URL+ cloudinaryImageId}  alt="food photo"/>
+            <div className="card-text  font-semibold">
+            <h3 className="card-title text-base underline font-bold "> {name}</h3>
+            <h4 className="cuisine text-sm">{cuisines.join(", ")}</h4>
+            <h4 className="text-base"><span className="font-bold">Avg. Rating :</span> {avgRating} <AiFillStar className='inline ' /> </h4>
+            <h4 className="text-sm	font-bold">{deliveryTime} mins away</h4>
             </div>
         </div>
     )

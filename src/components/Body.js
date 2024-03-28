@@ -48,12 +48,12 @@ const Body = ()=>{
         <Shimmer/>
     ) :         (
         <div className="body">
-            <div className="filter">
-                <div className="search">
-                    <input type="text" className="search-box" value={searchText} onChange={(e)=>{
+            <div className="filter flex ml-96">
+                <div className="search p-5 ml-7 ">
+                    <input type="text" className="search-box border-2 border-black rounded-md pl-1" value={searchText} onChange={(e)=>{
                         setSearchText(e.target.value)
                     }}/>
-                    <button className="search-button"
+                    <button className="search-button ml-3 bg-orange-300 border px-2 py-0.5 rounded-md font-semibold"
                     onClick ={
                         () => {
                                 const searchedRes = RES_DYNAMIC_DATA.filter((res)=>res.info.name.toLowerCase().includes(searchText.toLowerCase()))
@@ -61,7 +61,8 @@ const Body = ()=>{
                         }
                     }>Search</button>
                 </div>
-                <button className="filter-btn" onClick={()=>{
+                <div className="mt-[13px]  ml-8 font-semibold">
+                <button className="filter-btn bg-zinc-400 p-2 rounded-lg " onClick={()=>{
                     const filteredRating = RES_DYNAMIC_DATA.filter(
                         (res)=>(res.info.avgRating > 4.3));
                         setFilteredRestaurant(filteredRating)
@@ -69,8 +70,10 @@ const Body = ()=>{
                 }}>
                     Top Rated Restraunts
                 </button>
+                </div>
+                
             </div>
-            <div className="res-container">
+            <div className="res-container flex flex-wrap m-2">
                 {filteredRestaurant.map((eachRestaurantNum)=>(
                 <Link key = {eachRestaurantNum.info.id} to={"/restaurants/"+eachRestaurantNum.info.id}><RestaurantCard  resData= {eachRestaurantNum}/></Link>
                 ))}
